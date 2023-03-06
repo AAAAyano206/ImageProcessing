@@ -37,10 +37,10 @@ string getName(string str) {
 int main()
 {
 	Mat srcImage, mergeImage;		//源图像、通道合并后的图像
-	Mat image_V;					// V通道
+	Mat image_V;				// V通道
 	vector<Mat> channels_HSV;		//vector<Mat>： 可以理解为存放Mat类型的容器（数组）
 
-	//请修改为自己的图像路径
+	// 请修改为自己的图像路径
 	cv::String folder = "C:\\Users\\Lunci\\Desktop\\dataset\\high2000";
 	std::vector<cv::String> imagePathList;
 	getImagePathList(folder, imagePathList);
