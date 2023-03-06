@@ -128,7 +128,7 @@ int main()
         cout << "读取图像有误，请重新输入正确路径！\n";
         return -1;
     }
-
+    
     double mse = getMSE(gtImage, outImage), snr = getSNR(gtImage, outImage);
     double psnr = 10.0 * log10((255 * 255) / mse), ssim = getSSIM(gtImage, outImage);
     cout << "计算MSE值得到：MSE = " << mse << endl;;
