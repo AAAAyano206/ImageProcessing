@@ -8,10 +8,10 @@ using namespace std;
 
 // 添加高斯噪声
 void gaussian_noise(Mat & image) {
-    Mat noise = Mat::zeros(image.size(), image.type());
-    randn(noise, (15, 15, 15), (30, 30, 30));
-    Mat dst;
-    add(image, noise, dst);
+	Mat noise = Mat::zeros(image.size(), image.type());
+	randn(noise, (15, 15, 15), (30, 30, 30));
+	Mat dst;
+	add(image, noise, dst);
 }
 
 // 遍历文件夹内的所有图像
